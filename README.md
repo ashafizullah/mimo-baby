@@ -10,7 +10,7 @@ rupiah at a fixed 1 USD = 17,800 IDR).
 
 ## Live
 
-- **https://mimo-baby-ten.vercel.app**
+- **https://mimo-baby.vercel.app**
 
 ## Features
 
