@@ -1,0 +1,240 @@
+:root {
+  color-scheme: dark;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #0b0e14;
+  background-image:
+    radial-gradient(1200px 500px at 50% -100px, rgba(124, 92, 255, 0.16), transparent 60%),
+    radial-gradient(900px 400px at 90% 15%, rgba(56, 189, 248, 0.08), transparent 60%);
+  background-attachment: fixed;
+  color: #eef1f8;
+  font-family:
+    'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 28px 18px 80px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.eyebrow {
+  color: #9aa3b8;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0;
+}
+h1 {
+  font-size: 36px;
+  margin: 10px 0 8px;
+  letter-spacing: -0.5px;
+}
+.sub {
+  color: #9aa3b8;
+  max-width: 660px;
+  line-height: 1.6;
+  font-size: 15px;
+  margin: 0;
+}
+.langbar {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.langbar button {
+  background: rgba(255, 255, 255, 0.05);
+  color: #eef1f8;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  padding: 9px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.langbar button.on {
+  background: #7c5cff;
+  border-color: #7c5cff;
+  color: #fff;
+}
+.updated {
+  color: #6b7488;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 26px;
+}
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.card {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 26px;
+  padding: 22px;
+}
+.card h2 {
+  margin: 0 0 12px;
+  font-size: 21px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.card .note {
+  color: #6b7488;
+  font-weight: 400;
+  font-size: 14px;
+}
+.chip {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+.chip.live {
+  background: rgba(54, 211, 153, 0.14);
+  color: #34d399;
+  border: 1px solid rgba(54, 211, 153, 0.3);
+}
+.chip.done {
+  background: rgba(148, 163, 184, 0.14);
+  color: #9aa3b8;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+.line {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+  font-size: 15px;
+  line-height: 1.45;
+}
+.line:last-of-type {
+  border-bottom: none;
+}
+.line .k {
+  color: #aab3c7;
+}
+.line .v {
+  font-weight: 600;
+  text-align: right;
+}
+.section {
+  margin-top: 26px;
+}
+.section > h3 {
+  margin: 0 0 14px;
+  font-size: 20px;
+}
+.trend {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 14px 0 4px;
+}
+.trend-label {
+  color: #6b7488;
+  font-size: 13px;
+  margin: 0;
+}
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.book {
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 5px 12px;
+  border-radius: 999px;
+  color: #c9d1e2;
+}
+.scorecards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+@media (max-width: 760px) {
+  .scorecards {
+    grid-template-columns: 1fr;
+  }
+}
+.scorecard {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 16px 18px;
+}
+.scorecard .who {
+  color: #9aa3b8;
+  font-size: 13px;
+}
+.scorecard .big {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 4px 0;
+  letter-spacing: -1px;
+}
+.scorecard .hint {
+  color: #6b7488;
+  font-size: 13px;
+}
+.notice {
+  border-left: 3px solid #7c5cff;
+  background: rgba(124, 92, 255, 0.07);
+  border-radius: 0 14px 14px 0;
+  padding: 12px 16px;
+  margin: 10px 0;
+}
+.notice p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #c9d1e2;
+}
+.notice .when {
+  display: block;
+  margin-top: 6px;
+  color: #6b7488;
+  font-size: 12px;
+}
+.errcard {
+  text-align: center;
+  padding: 40px 20px;
+  color: #9aa3b8;
+  line-height: 1.6;
+}
+.errcard .face {
+  font-size: 42px;
+}
+footer {
+  margin-top: 40px;
+  color: #6b7488;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+}
+a {
+  color: #a78bfa;
+}
